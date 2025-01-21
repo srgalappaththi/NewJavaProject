@@ -7,9 +7,9 @@ trigger:
 - master
 
 pool:
-  name: Default
+  name: Azure Pipelines
   demands:
-  - agent.name -equals HCS-LK-DT-0040
+  - agent.name -equals Hosted Agent
   
 steps:
 - task: Maven@3

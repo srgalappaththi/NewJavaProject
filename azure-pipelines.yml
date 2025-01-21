@@ -7,8 +7,10 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
-
+  name: Default
+  demands:
+  - agent.name -equals HCS-LK-DT-0040
+  
 steps:
 - task: Maven@3
   inputs:

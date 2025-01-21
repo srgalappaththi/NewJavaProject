@@ -10,6 +10,33 @@
 	<version>1.0</version>
 	<name>SampleCode</name>
 	<url>http://maven.apache.org</url>
+
+	<distributionManagement>
+	<repository>
+  		<id>shalikagalappaththi</id>
+  		<url>https://pkgs.dev.azure.com/shalikagalappaththi/_packaging/shalikagalappaththi/maven/v1</url>
+  		<releases>
+    		<enabled>true</enabled>
+  		</releases>
+ 		 <snapshots>
+    		<enabled>true</enabled>
+  		</snapshots>
+	</repository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>shalikagalappaththi</id>
+  			<url>https://pkgs.dev.azure.com/shalikagalappaththi/_packaging/shalikagalappaththi/maven/v1</url>
+  			<releases>
+    		<enabled>true</enabled>
+  			</releases>
+  			<snapshots>
+    		<enabled>true</enabled>
+  			</snapshots>
+		</repository>
+	</repositories>	
+
 	<dependencies>
 		<dependency>
 			<groupId>net.authorize</groupId>
